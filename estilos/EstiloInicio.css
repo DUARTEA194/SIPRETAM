@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 40px;
+}
+/*ESTILOS DEL BOTON FLOTANTE*/
+#btnNueva{
+    display: none;
+}
+.contenedorNuevasolicitud{
+    position: fixed;/*fijo ala pantalla*/
+    bottom: 20px;
+    right: 20px;
+}
+
+.opciones a,.btnNueva2{
+    display: block;
+    text-decoration: none;
+    width: 55px;
+    background-color: red;
+    line-height: 55px;
+    text-align: center;
+    border-radius:100%;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0,0.4);
+    transition: all 300ms ease;
+    color:white;
+    font-size:20px;
+    margin-bottom: -15px;
+    visibility: hidden;
+}
+.opciones a:hover{
+    background-color:white;
+    color:red;
+}
+#btnNueva:checked~ .opciones a{
+    margin-bottom:10px;
+    opacity:1;
+    visibility: visible;
+}
+
+/*ESTILOS DE LAS TAJETA DE CONTENNIDO*/
+.contenido{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+.tarjetaContenido{
+    margin: auto;
+    margin-top: 40px;
+    max-width: 1000px;
+    border-radius: 10px;
+    box-shadow: 21px 22px 20px -9px rgba(56,56,56,0.44);
+-webkit-box-shadow: 21px 22px 20px -9px rgba(56,56,56,0.44);
+-moz-box-shadow: 21px 22px 20px -9px rgba(56,56,56,0.44);
+    outline: 1px solid rgb(173, 173, 173);
+    
+}
+.tarjetaContenidoHeader{
+    background:#9C8412; 
+    color: white;
+    padding: 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.tarjetaContenidoContenido{
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius:10px;
+    border-bottom-right-radius:10px;
+}

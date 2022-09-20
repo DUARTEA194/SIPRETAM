@@ -1,0 +1,80 @@
+:root {
+    --blue: #cfcfcf;
+    --white: #ffffff;
+  }
+
+body{
+    padding: 40px;
+}
+.contenedorGeneral{
+    margin: 40px 10px 40px 80px;
+}
+h1{
+    margin: auto;
+    text-align: center;
+}
+/*ESTILOS DEL CONTENEDOR DE LAS SOLICITUDES*/
+.contenedorFormularioSolicitud{
+    margin: 20px;
+}
+.cabeceraFormulario{
+    background: #9C8412;
+    color: white;
+    padding: 10px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+.bodyFormulario{
+    background-color:var(--blue);
+    padding: 10px 15px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.bodyFormularioSeccion{
+outline:1px solid gray; 
+padding:10px; 
+border-radius:10px;
+}
+
+/*ESTILOS DE LA TABLA CONTENEDOR*/
+table{
+    width: 100%;
+}
+table td{
+    padding: 8px;
+    height: 20px;
+    outline: 1px solid black;
+    
+}
+.thTitulo{
+    background-color: green;
+    text-align: center;
+    margin:5px;
+    padding:5px;
+
+}
+.inputDatos{
+    display: block;
+    padding: 5px;
+    width:100%;
+    background-color:white;
+    border-radius: 10px;
+    outline: 1px solid rgb(102, 102, 102);
+
+}
+/*SOLUCIONAR PROBLEMAS ##############################*/
+.textarea {
+    display: block;
+    width: 98%;
+    max-width: 100%;
+    overflow: hidden;
+    resize: both;
+    min-height: 40px;
+    line-height: 20px;
+    padding:5px;
+}
+.textarea[contenteditable]:empty::before {
+    content: "Placeholder still possible";
+    color: gray;
+  }
